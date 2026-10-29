@@ -1,9 +1,9 @@
 <!-- Unit 3 Project
 Requirements
 [  ] Two External Links
-[  ] Table (minimum 2 Columns by 3 Rows)
+[done] Table (minimum 2 Columns by 3 Rows)
 [  ] Three CSS Rules
-[  ] Three Images
+[done]] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect
@@ -70,6 +70,21 @@ Select ONE Additional Feature to Add
   transform: rotateY(180deg);
 }
 
+
+#madonna {
+  margin:auto;
+  width: fit-content;
+}
+
+#lauryn_hill {
+  margin:auto;
+  width: fit-content;
+}
+
+#fcs{
+  display: flex;
+  justify-content: space-around;
+}
   </style>
 </head>
 
@@ -77,8 +92,9 @@ Select ONE Additional Feature to Add
 
   <h1>Lila's CD Shelf</h1>
 
-
-<p>
+<div id="fcs">
+<!-- <p id="madonna"> -->
+  <!--Madonna-->
   <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -89,49 +105,93 @@ Select ONE Additional Feature to Add
     </div>
   </div>
   </div>
+<!-- </p> -->
 
+<!-- <p id="lauryn_hill">   -->
+ <!--Lauryn Hill--> 
   <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://i.discogs.com/yES_WXshHlbwUeLZaPfEAz7_LIUmU8CRe5hK06XI03c/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5MDQ5/MDctMTQ1MTM3NDQ4/MC0yOTc0LmpwZWc.jpeg" alt="Avatar" style="width:300px;height:300px;">
     </div>
+    
     <div class="flip-card-back">
-      <img src="https://www.theturntablestore.com/cdn/shop/products/10054135-2408982564cae8258f10a64cae8258f10e169101930164cae8258f118.jpg?v=1701838353&width=1946" width="300">
+      <img src="https://m.media-amazon.com/images/I/A125zY9aA-L._UF1000,1000_QL80_.jpg" width="300">
     </div>
   </div>
   </div>
-</p>
 
-  <h2>Contents:</h2>
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbXAiL6yW1fJpKgamFgjA-SjnsDD11fSXtN1Q1ceaLg&s=10" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    
+    <div class="flip-card-back">
+      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88j-bwze15t_UuJJ10enpLG5wmrZnHPpKPXH7N8vKIpP_686v2je4tA-H&s=10" width="300"></a>
+    </div>
+  </div>
+  </div>
 
-  <ol>
-    <li><a href="?">Heart Thumb-print cookies</a></li>
-  </ol>
+  </div>
+<!-- </p> -->
 
-  <h2 id="?"></h2>
-
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+<h2>CD Log</h2>
 
   <table>
     <thead>
       <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
+        <th>Artist</th>
+        <th>Album Title</th>
+        <th>Year Released</th>
+        <th>Genre</th>
+        <th>Run Time</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Ingredient #1</td>
-        <td>Quantity #1</td>
+        <td>Madonna</td>
+        <td>Music</td>
+        <td>2000</td>
+        <td>Electronica, dance-pop</td>
+        <td>44:40</td>
       </tr>
+      <tr>
+        <td>Lauryn Hill</td>
+        <td>The Miseducation of Lauryn Hill</td>
+        <td>1998</td>
+        <td>Neo-Sould, R&B</td>
+        <td>77:17</td>
+      </tr>
+      <tr>
+        <td>The Roots</td>
+        <td>Things Fall Apart</td>
+        <td>1999</td>
+        <td>Hip-hop, Jazz-rap, art-pop</td>
+        <td>68:54</td>
+      </tr>
+
     </tbody>
   </table>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+
+  <h2>Descriptions:</h2>
+
+  <h3 id="madonna_music">Madonna, Music</h3>
+
+  <p><strong>Track List</strong></p>
+  <ol>
+    <li>Music</li>
+    <li>Impresive Instant</li>
+    <li>Runaway Lover</li>
+    <li>I Deserve it</li>
+    <li>Amazing</li>
+    <li>Don't Tell Me</li>
+    <li>What it Feels Like for a Girl</li>
+    <li>Paradise (Not for Me)</li>
+    <li>Gone</li>
+  </ol>
+  <p><em>Favorite songs: Music, What it feels like for a girl</em></p>
 
   <p><em>Source: <a href="?">Some recipes websites</a></em></p>
 
