@@ -26,22 +26,23 @@ Select ONE Additional Feature to Add
     }
 
    .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 5px outset #f1f1f1;
+    perspective: 1000px;
+    margin: 10px;
+    }
 
 /* This container is needed to position the front and back side */
   .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  }
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
@@ -55,13 +56,15 @@ Select ONE Additional Feature to Add
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-  }
+    }
 
 /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
     color: black;
-  }
+    width: 200px;
+    height: 200px;
+   }
 
 /* Style the back side */
 .flip-card-back {
@@ -83,7 +86,10 @@ Select ONE Additional Feature to Add
 
 #fcs{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
   </style>
@@ -98,10 +104,10 @@ Select ONE Additional Feature to Add
   <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYS78KZOE2BYPrseaIXOWXhGUm9ehhZZpeGyYNtBSKYNSaa6lSvuoWWAO&s=10" alt="Avatar" style="width:300px;height:300px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYS78KZOE2BYPrseaIXOWXhGUm9ehhZZpeGyYNtBSKYNSaa6lSvuoWWAO&s=10" alt="Avatar" style="width:200px;height:200px">
     </div>
     <div class="flip-card-back">
-      <a href="#madonna_description"><img src="https://www.theturntablestore.com/cdn/shop/products/10054135-2408982564cae8258f10a64cae8258f10e169101930164cae8258f118.jpg?v=1701838353&width=1946" width="300"></a>
+      <a href="#madonna_description"><img src="https://www.theturntablestore.com/cdn/shop/products/10054135-2408982564cae8258f10a64cae8258f10e169101930164cae8258f118.jpg?v=1701838353&width=1946" style="width:200px;height:200px"></a>
     </div>
   </div>
   </div>
@@ -110,11 +116,11 @@ Select ONE Additional Feature to Add
   <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://i.discogs.com/yES_WXshHlbwUeLZaPfEAz7_LIUmU8CRe5hK06XI03c/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5MDQ5/MDctMTQ1MTM3NDQ4/MC0yOTc0LmpwZWc.jpeg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="https://i.discogs.com/yES_WXshHlbwUeLZaPfEAz7_LIUmU8CRe5hK06XI03c/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5MDQ5/MDctMTQ1MTM3NDQ4/MC0yOTc0LmpwZWc.jpeg" alt="Avatar" style="width:200px;height:200px">
     </div>
     
     <div class="flip-card-back">
-      <a href="#lauryn_hill_description"><img src="https://m.media-amazon.com/images/I/A125zY9aA-L._UF1000,1000_QL80_.jpg" width="300"></a>
+      <a href="#lauryn_hill_description"><img src="https://m.media-amazon.com/images/I/A125zY9aA-L._UF1000,1000_QL80_.jpg" style="width:200px;height:200px"></a>
     </div>
   </div>
   </div>
@@ -123,17 +129,82 @@ Select ONE Additional Feature to Add
    <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbXAiL6yW1fJpKgamFgjA-SjnsDD11fSXtN1Q1ceaLg&s=10" alt="Avatar" style="width:300px;height:300px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbXAiL6yW1fJpKgamFgjA-SjnsDD11fSXtN1Q1ceaLg&s=10" alt="Avatar" style="width:200px;height:200px">
     </div>
     
     <div class="flip-card-back">
-     <a href="#the_roots_description"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88j-bwze15t_UuJJ10enpLG5wmrZnHPpKPXH7N8vKIpP_686v2je4tA-H&s=10" width="300"></a>
+     <a href="#the_roots_description"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88j-bwze15t_UuJJ10enpLG5wmrZnHPpKPXH7N8vKIpP_686v2je4tA-H&s=10" style="width:200px;height:200px"></a>
+    </div>
+  </div>
+  </div>
+
+<!--First Day back-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://f4.bcbits.com/img/a1829431769_10.jpg" alt="Avatar" style="width:200px;height:200px">
+    </div>
+    
+    <div class="flip-card-back">
+      <a href=""><img src="https://imagescdn.juno.co.uk/full/CS1141398-01B-BIG.jpg" style="width:200px;height:200px"></a>
+    </div>
+  </div>
+  </div>
+
+  <!--fugazi-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://f4.bcbits.com/img/a0359835891_10.jpg" alt="Avatar" style="width:200px;height:200px">
+    </div>
+    
+    <div class="flip-card-back">
+      <a href=""><img src="https://archive.org/download/Fugazi_1989/Fugazi%20(1989).jpg" style="width:200px;height:200px"></a>
+    </div>
+  </div>
+  </div>
+
+<!--tinashe pop star-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.scdn.co/image/ab67616d0000b273f8dc54881b35310061266cdf" alt="Avatar" style="width:200px;height:200px">
+    </div>
+    
+    <div class="flip-card-back">
+      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgoaFLAno3QX3BQKUtetZzd2zPNhezlPnuqwmcZxuACBScko-zc04jsHf&s=10" style="width:200px;height:200px"></a>
+    </div>
+  </div>
+  </div>
+
+  <!--linda perhachs-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdi9CzdBVfeo-eKRrwFmaA25UXy5-CyxjqUdviyzk5HO95smer-__eKAE&s=10" alt="Avatar" style="width:200px;height:200px">
+    </div>
+    
+    <div class="flip-card-back">
+      <a href=""><img src="https://insheepsclothinghifi.com/wordpress/wp-content/uploads/2021/12/linda_back-1.jpg" style="width:200px;height:200px"></a>
+    </div>
+  </div>
+  </div>
+
+  <!--rosalia lux-->
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Rosal%C3%ADa_%E2%80%93_Lux_%28album_cover%29.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Avatar" style="width:200px;height:200px">
+    </div>
+    
+    <div class="flip-card-back">
+      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9nTmGmd_74E6IvBdbmW3kjaOb_F_e2U2W6LGall6DhSDgkrg23LhzkxUz&s=10" style="width:200px;height:200px"></a>
     </div>
   </div>
   </div>
 
   </div>
-<!-- </p> -->
+
 
 <h2>CD Log</h2>
 
