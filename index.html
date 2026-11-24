@@ -25,10 +25,10 @@ Select ONE Additional Feature to Add
   
   <style>
 
-    body {
-      color:rgb(252, 2, 60);
-      font-family: "Iceland", sans-serif;
-    }
+  body {
+    color:rgb(252, 2, 60);
+    font-family: "Iceland", sans-serif;
+  }
 
   #main_header {
     display: flex;
@@ -40,6 +40,14 @@ Select ONE Additional Feature to Add
     font-weight: 350;
   }
 
+  #fcs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+   }
+
    .flip-card {
     background-color: transparent;
     width: 200px;
@@ -49,7 +57,6 @@ Select ONE Additional Feature to Add
     margin: 10px;
     }
 
-/* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -58,22 +65,21 @@ Select ONE Additional Feature to Add
     transition: transform 0.8s;
     transform-style: preserve-3d;
     }
+      
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-  }
 
-/* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     }
 
-/* Style the front side (fallback if image is missing) */
+
   .flip-card-front {
     background-color: #bbb;
     color: black;
@@ -81,12 +87,12 @@ Select ONE Additional Feature to Add
     height: 200px;
    }
 
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
+
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
 
 #madonna {
@@ -99,23 +105,19 @@ Select ONE Additional Feature to Add
   width: fit-content;
 }
 
-#fcs{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-content: flex-start;
-  flex-wrap: wrap;
-}
+
 
   </style>
 </head>
 
 <body style="background-color: rgb(248, 186, 191)">
 
-
   <h1 id="main_header">Lila's CD Shelf</h1>
+  <a href="#cd_log">
+    <h1>View Full CD Log</h1>
+  </a>
 
-<div id="fcs">
+  <div id="fcs">
   <!--Madonna-->
   <div class="flip-card">
   <div class="flip-card-inner">
@@ -222,7 +224,7 @@ Select ONE Additional Feature to Add
   </div>
 
 
-<h2>CD Log</h2>
+<h2 id="cd_log">CD Log</h2>
 
   <table>
     <thead>
