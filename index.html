@@ -19,17 +19,32 @@ Select ONE Additional Feature to Add
 <head>
   <title>Project: CD Shelf</title>
   <meta charset="utf-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Iceland&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  
   <style>
 
     body {
-      color:rgb(252, 2, 60)
+      color:rgb(252, 2, 60);
+      font-family: "Iceland", sans-serif;
     }
+
+  #main_header {
+    display: flex;
+    background-color: #f1f1f1ca; 
+    justify-content: center;
+    margin: 10px;
+    border: 5px outset rgba(252, 2, 60, 0.509);
+    font-size: 4em;
+    font-weight: 350;
+  }
 
    .flip-card {
     background-color: transparent;
     width: 200px;
     height: 200px;
-    border: 5px outset #f1f1f1;
+    border: 5px outset #f1f1f1ca;
     perspective: 1000px;
     margin: 10px;
     }
@@ -98,7 +113,7 @@ Select ONE Additional Feature to Add
 <body style="background-color: rgb(248, 186, 191)">
 
 
-  <h1>Lila's CD Shelf</h1>
+  <h1 id="main_header">Lila's CD Shelf</h1>
 
 <div id="fcs">
   <!--Madonna-->
