@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project: CD Shelf</title>
+  <meta charset="utf-8">
+  <style>
+
+    body {
+        color: rgb(252, 2, 60);
+    }
+
+  </style>
+</head>
+<body style="background-color:  rgb(248, 186, 191);">
+
+<h1></h1>
+
+  <p><strong>Track List</strong></p>
+  <ol>
+    <li>Music</li>
+    <li>Impresive Instant</li>
+    <li>Runaway Lover</li>
+    <li>I Deserve it</li>
+    <li>Amazing</li>
+    <li>Don't Tell Me</li>
+    <li>What it Feels Like for a Girl</li>
+    <li>Paradise (Not for Me)</li>
+    <li>Gone</li>
+  </ol>
+  <p><em>Favorite songs: Music, What it feels like for a girl</em></p>
+
+  <p><em><a target="_blank" href="https://www.youtube.com/watch?v=A9EvnyhUZrA&list=PLuhCNy84LL2cck_Nrkac-XNN7bvREgkXG">Listen to the full album</a></em></p>
+
+  <p><em><a target="_blank" href="https://pitchfork.com/reviews/albums/madonna-music/">read more about this album</a></em></p>
+
+</body>
